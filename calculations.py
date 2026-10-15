@@ -1,3 +1,6 @@
+
+########################################################
+
 def bmi_calculation(weight, height):
     bmi = weight / (height / 100) ** 2
     return round(bmi, 2)
@@ -23,3 +26,8 @@ def tdee_calculation(bmr, activity_level):
     tdee = bmr * activity_multiplier[activity_level]
     return round(tdee, 2)
 ########################################################
+
+
+def name(name):
+    name = name.split()
+    return name[0].capitalize()
